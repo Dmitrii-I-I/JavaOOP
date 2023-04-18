@@ -1,37 +1,27 @@
 package OOP_DZ1;
 
 public class Human {
-    public String name;
-    public String surname;
+    public String fullname;
     public int age;
     public boolean gender;
 
-    public Human(String name, String surname, int age, boolean gender) {
-        this.name = name;
-        this.surname = surname;
+    public Human(String fullname, int age, boolean gender) {
+        this.fullname = fullname;
         this.age = age;
         this.gender = gender;
     }
 
     @Override
     public String toString() {
-        return "Human{" + name + " " + surname + "age=" + age + gender + "}";
+        return "Human{" + fullname + "age=" + age + gender + "}";
     }
 
-    public String getName() {
-        return name;
+    public String getFullname() {
+        return fullname;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
     public int getAge() {
@@ -49,4 +39,5 @@ public class Human {
     public void setGender(boolean gender) {
         this.gender = gender;
     }
+
 }
