@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Search {
     public ArrayList<String> resultSeek = new ArrayList<>();
     public ArrayList<Unit> tree;
-    public ArrayList<String> resultAge = new ArrayList<String>();
+    public ArrayList<String> resultAge = new ArrayList<>();
 
     public Search(NumanTree humanTree) {
         tree = humanTree.getTree();
@@ -20,7 +20,11 @@ public class Search {
                 resultSeek.add(tr.per2.fullname);
             }
         }
+//        for (int i = 0; i <= resultSeek.size(); i++){
+//            System.out.println(resultSeek.get(i));
+//        }
         return (ArrayList<String>) resultSeek;
+
     }
 
     public ArrayList<String> seekAge() {
@@ -37,7 +41,7 @@ public class Search {
         System.out.print("Ввод ограничения по возрасту: ");
         Scanner in = new Scanner(System.in);
         int age = in.nextInt();
-        System.out.println("Люди, младше: " + age + ":");
+        System.out.println("Люди, возраст до: " + age + ":");
         return age;
     }
 

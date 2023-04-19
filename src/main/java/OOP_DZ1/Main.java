@@ -26,7 +26,7 @@ public class Main {
         tr.appendFatherChild(ivan, petr);
         tr.appendMotherChild(masha, petr);
         tr.appendWifeHusband(masha, ivan);
-
+        System.out.println(tr.getTree());
         // Поиск детей Ивана
         System.out.println("Дети Ивана");
         System.out.println(new Search(tr).seekUnit(ivan, Relationship.father));

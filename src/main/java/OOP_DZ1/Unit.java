@@ -8,7 +8,7 @@ public class Unit {
 
     public Unit(Human per1, Relationship re, Human per2) {
         this.per1 = per1;
-        this.relationship = relationship;
+        this.relationship = re;
         this.per2 = per2;
     }
 
